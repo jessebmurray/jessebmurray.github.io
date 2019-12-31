@@ -190,7 +190,7 @@ nav .info  {
 }
 
 nav .info > aside {
-	font-weight: normal;
+	font-weight: nameal;
 	color: rgba(255,255,255,0.5);
 }
 
@@ -315,7 +315,7 @@ nav a:hover {
 
 .splash > .big {
 	font-family: Merriweather Sans;
-	font-size: 7.5em;
+	font-size: 3em;
 	z-index: 2;
 }
 
