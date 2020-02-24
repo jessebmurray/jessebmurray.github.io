@@ -103,26 +103,26 @@ Pressing on a title will open an explanatory article/jupyter notebook in a new t
             <div>
             <span class="blurb">
               
-Consider the current tallest trees in a forest. Are most of them the offspring of the previous generation's 
-tallest trees or the previous generation's shorter/average trees? 
+Consider the tallest trees in a forest. Are most of them the offspring of the last generation's 
+tallest trees or the last generation's shorter/average trees? 
               
-Although the tallest trees have a higher probability of having tall offspring, there is a far greater 
-number of average/short trees. 
+Although tall trees have a higher probability of having tall offspring, 
+there are many more average/short trees than tall trees. 
               
-To answer this question, I created a model of reproducing normal population distributions with regression towards the mean.
+To answer the question, I created a model of reproducing normal population distributions with regression towards the mean.
 
 The model was based on the                  <a href="https://en.wikipedia.org/wiki/Regression_toward_the_mean#Definition_for_simple_linear_regression_of_data_points" target="_blank">
 linear regression</a> equation of           <a href="https://www.nature.com/articles/pr1998502" target="_blank">
 polygenic inheritance</a>. 
 
-The model assumed small normal distributions about the 
+It assumed small normal distributions about the 
 expected-offspring-value from each parent member in the previous 
-generation summing to form the distribution of the current generation. 
+generation that sum to form the current generation distribution.
 
 A simulation of the model found that past the 72nd percentile, the tallest trees are 
 mostly the offspring of the shorter/average parents. 
 
-The model was also applied to the intergenerational movement between quintiles and obtained
+The model was also applied to intergenerational movement between quintiles and obtained
 an r<sup>^2</sup> of 0.92 and 0.93 (p < .00001) with  Brookings Institution measures of                  <a href="https://www.brookings.edu/blog/social-mobility-memos/2014/10/27/the-inheritance-of-education/" target="_blank">
 intergenerational education and income mobility</a>, respectively. 
 
