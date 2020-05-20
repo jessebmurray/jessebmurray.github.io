@@ -95,19 +95,22 @@ Pressing on a title will open an explanatory paper, research poster or jupyter n
       
      
         <li>
-          <h2><a class="post-link" href="https://github.com/jessebmurray/COVID-19/blob/master/README.md" target="_blank">New: COVID-19 visualizations, including the evolving relationship between the prevalence of COVID-19 and population density</a></h2> <aside class="post-meta"> · May 2020</aside>
+          <h2><a class="post-link" href="https://github.com/jessebmurray/COVID-19/blob/master/README.md" target="_blank">New: Using machine learning to predict COVID-19 cases within each US county from the 2018 US Census Estimates data, and visualizations of the evolving relationship between the prevalence of COVID-19 and population density</a></h2> <aside class="post-meta"> · May 2020</aside>
           <div class="third">
             <div>
 
-              <img src="/images/prevalence.gif">
+              <img src="/images/xgb_performance.png">
 
             </div>
             <div>
             <span class="blurb">
 
-In this brief side project, I explore how the population density of a US county can be used to predict its prevalence of COVID-19, and how this relationship changes as the virus continues its march across urban, suburban, and rural counties alike. 
-I also explore the relative changes in people's interests during the pandemic lockdown by looking at the changes in various google searches at the US epicenter of the crisis: NYC.
-COVID-19 presents a unique opportunity for data and statistics geeks to gain insights into the rapidly evolving crisis, and that's what I tried to do with this mini-project.
+In this project, I applied gradient boosted decision trees to 2018 US Census Estimates data to predict the number of confirmed COVID-19 cases per 100,000 within each US county. 
+I then identified the counties with the biggest negative residuals, in other words, the counties for which the model most over-predicted the prevalence of COVID-19. 
+These counties can be considered the 'luckiest' counties, as they have fared much better than was predicted from their US census data. 
+Or perhaps, testing may need to be expanded in these counties, as they may have far more cases than presently reported.
+I also explore how the population density of a US county can be used to predict its prevalence of COVID-19, and how this relationship changes as the virus continues its march across urban, suburban, and rural counties alike. 
+Lastly, I explore the relative changes in people's interests during the pandemic lockdown by looking at the changes in various google searches at the US epicenter of the crisis: NYC.
               
             </span>
             </div>
