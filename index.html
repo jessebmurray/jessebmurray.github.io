@@ -89,12 +89,8 @@
     <h2><a href="/">Projects</a></h2>
     <aside>
       
-The projects are largely in order of most to least impactful. The dates show when I was most productively working on the project. 
-Pressing on a title will open a description of the project. 
+The projects are largely in order of most to least impactful. The titles link to a description and the dates indicate when I was most productive. 
 
-    
-    
-    
     </aside>
   </header>
 
@@ -183,13 +179,15 @@ Professor Minjoon Kouh and I intend to publish a paper on our findings.
           <div class="third">
             <div>
 
-              <img alt="" src="/images/trimmed_parameters_side_n600_z6_.png">
+              <img alt="" src="/images/individual_offspring_n1000_r50_r_s90_.png">
 
             </div>
             <div>
             <span class="blurb">
-A population model of polygenic inheritance is derived from the linear regression and normality of polygenic traits as first discovered by Francis Galton in the late 19th century. A simulation of the model is run with the measured parameter values r and r_s in the data from Galton’s famous study on the heights of adult children and their parents. The simulation is shown to successfully construct an offspring generation that highly replicates the parent generation - indicating a stable population distribution between generations. A quintile transition matrix of intergenerational mobility is created, obtaining an R^2 of 0.81 (p < 0.001) with Galton’s data and an R^2 of 0.96 (p < 0.001) with US family income data. Calculations of intergenerational upward persistence are made, which highly correspond to measurements in Galton’s data. An equilibrium point is obtained at the percentile score of 71.7%, which compares well with the measured equilibrium percentile score of 72.2% in Galton’s data. (The equilibrium indicates that those above the 72nd percentile are equally likely to be the children of parents above the 72nd percentile and of parents below the 72nd percentile.) Furthermore, the paper demonstrates the roles r and r_s have in determining population variance stability between generations.
-I am in the process of writing a paper to be submitted to a journal. You can also check out my <a href="https://github.com/jessebmurray/polygenic" target="_blank">GitHub repository</a> for the project, where all my work is. 
+What follows is a non-technical abstract (the technical abstract is in the paper): Are the tallest members of a population mostly the children of tall couples, or rather the children of shorter couples? Tall couples are certainly more likely to have tall children, and so you would expect most of the tall children to be from tall couples. On the other hand, there are many more average and shorter height couples than tall couples, thus by their sheer number they might end up producing more tall children overall. So which is it? Does the greater number overcome the lower odds, or vice versa? The goal of this project was to derive a compuational model that quantified these effects and answered such questions precisely. What did it find? Well, if 'tall' is to be considered as within the top 10%, then the shorter couples win by far: of the 'tall' members of society, only 30% are from tall parents. This model ended up having a lot more to say about intergenerational mobility and the  parameter values that allow for a stable population over time. Furthermore, the model made verifiable predictions that agreed remarkably well with <a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/T0HSJ1" target="_blank">Galton’s historic height dataset</a> (R^2 of 0.81) and with <a href="http://www.equality-of-opportunity.org/assets/documents/mobility_geo.pdf" target="_blank">US family income data</a> (R^2 of 0.96). 
+              
+
+
               
 <!-- 
 
@@ -376,9 +374,11 @@ I'm currently working on exploring the intriguing features of the errors for thi
             </div>
             <div>
             <span class="blurb">
-
-                I compare the relative competitiveness and economic rewards of different college majors both for bachelor's degree only as well as graduate degree holders using SAT score and income data. Main results: The English, Language, and Philosophy/religious are both highly competitive and highly economically unrewarding. Physical science and Biology majors are highly competitive and relatively economically unrewarding, until a graduate degree is obtained. Then those majors become highly economically rewarding. For overall score - in terms of maximizing the economic rewards as well as the ratio of the rewards to the competitiveness - if one only obtains a bachelor's degree the 'best' majors are Engineering and Computer Science. 
-
+I compare the relative competitiveness and economic rewards (income) of different college majors using SAT score and income data. Main results: The English, Language, and Philosophy/religious majors, i.e., humanities majors, are both very competitive as well as very economically unrewarding. On the other hand, the Physical science and Biology majors are highly competitive and relatively economically unrewarding, that is, until a graduate degree is obtained. Then, those majors become very economically rewarding. For overall score - in terms of getting the most economic reward for the least competitiveness - the 'best' undergraduate degrees are Engineering and Computer Science.
+              
+<!-- 
+I compare the relative competitiveness and economic rewards of different college majors both for bachelor's degree only as well as graduate degree holders using SAT score and income data. Main results: The English, Language, and Philosophy/religious are both highly competitive and highly economically unrewarding. Physical science and Biology majors are highly competitive and relatively economically unrewarding, until a graduate degree is obtained. Then those majors become highly economically rewarding. For overall score - in terms of maximizing the economic rewards as well as the ratio of the rewards to the competitiveness - if one only obtains a bachelor's degree the 'best' majors are Engineering and Computer Science. 
+-->
             </span>
             </div>
           </div>
@@ -394,12 +394,8 @@ I'm currently working on exploring the intriguing features of the errors for thi
             </div>
             <div>
             <span class="blurb">
-                I demonstrate how one can time travel by moving very fast and show some of the incredible effects that occur. (There is one other way to time travel: get next to something very heavy.)
-              The effects - from watching the earth shrink to the width of a pancake to being able to see radio waves - are exactly calculated when you decide your date of departure, date of arrival (in the future), and how far into the future you want to go for every one hour of time travel (a day, a year, a millennium, etc.).
-              But beware, once you travel to the future, you can never come back!
-              I made this when I was the TA for a special relativity class at the <a href="http://www.drew.edu/governors-school/" target="_blank">New Jersey Governor’s School in the Sciences</a>, a science program for talented New Jersey high school students. 
-              I hoped to provide a fun explanation of the effects of moving at high speeds and the significant energy requirements that make time travel technically possible but practically out of reach.
-              I hope to come back to this project when I have some free time and make a javascript application.
+              
+Is time travel technically possible? Well, yes! Although, you can only travel forward in time, and the energy requirements are rather ridiculous. How do you do it? You go fast, very fast. In doing so, you take advantage of the remarkable fact that light moves away from all observers at the same speed. For example, if someone drives past you on a motorcycle going 90% the speed of light and turns on a flashlight, the light from the flashlight will go away from you <i> and him </i> at the same speed. This simple fact leads to all sorts of wondrous seeming paradoxes: from the Earth shrinking to the width of a pancake, to seeing radio waves. (Actually there is one other way to time travel, which is to get next to something heavy, but I haven't covered that yet.) In this project, I thought it would be cool to create a virtual time machine. Simply enter the date in the future you'd like to go to and how fast you'd like to travel, then see all the amazing things that will happen during your journey, like how much fuel you'll need for your spaceship (probably a lot). I made this when I was the TA for a special relativity class at the <a href="http://www.drew.edu/governors-school/" target="_blank">New Jersey Governor’s School in the Sciences</a>. I hoped to show how the significant energy requirements of time travel make it practically out of reach for the foreseeable future. I hope to come back to this project eventually and make a fun web application.
             </span>
             </div>
           </div>
@@ -441,13 +437,7 @@ I'm currently working on exploring the intriguing features of the errors for thi
             <div>
             <span class="blurb">
 
-                Understanding and reading deeply about climate change has long been a hobby of mine, probably because it presents a multi-disciplinary scientific and engineering problem that heavily relies on understanding physics and chemistry.
-                Specifically, the problem we are faced with is how to get emissions to <a href="https://www.ipcc.ch/sr15/chapter/spm/spm-c/spm3a/" target="_blank">zero by 2050</a>.
-                At first, the problem seems to be about <a href="https://en.wikipedia.org/wiki/Energy" target="_blank">energy</a> sourcing and storage. However, one quickly discovers that the world needs to solve a wide array of seemingly vital chemical reactions.
-                These are the slides of a 30-minute talk I gave for a student club, in which I discussed the science in great detail and crystallized my knowledge of this important issue.
-                I also discussed the problem as it relates to public policy and included some innovative solutions that are gaining attention.
-                The talk came from my passion for physics and multi-disciplinary science, and it was created entirely in my free time, purely out of my deep interest in the topic. 
-
+Understanding and reading deeply about global warming has long been a hobby of mine, in fact, I am a contributor to the <a href="https://en.wikipedia.org/wiki/Global_warming" target="_blank">global warming Wikipedia page</a>. To me, global warming presents a fascinating multi-disciplinary scientific and engineering problem that requires a good understanding of physics and chemistry. To avoid exceeding 1.5ºC warming, the world needs to get emissions to <a href="https://www.ipcc.ch/sr15/chapter/spm/spm-c/spm3a/" target="_blank">zero by 2050</a>. This daunting challenge seems at first to merely be about <a href="https://kleinmanenergy.upenn.edu/sites/default/files/Getting_to_Zero.pdf" target="_blank">energy sourcing and storage</a>. However, one eventually discovers a dramatic problem in that we must eliminate many greenhouse gas producing chemical reactions that are currently deeply fundamental to industrialized life (steel, concrete, fertilizer, etc.). These are the slides of a 30-minute talk I gave for a student club, in which I discussed the many diverse sources of anthropogenic carbon emissions in great detail. I also discussed the problem as it relates to public policy and included some innovative ideas that are gaining attention. The talk came from my passion for physics and multi-disciplinary science, and it was created entirely in my free time, purely out of my deep interest in the topic. 
             </span>
             </div>
           </div>
@@ -495,19 +485,19 @@ I have some project-ideas still on my might-do/unexplored list, they are on topi
 
 <li>
     Using data on people's music listening habits to better understand the pleasantness of a song as a function of the number 
-  of listens. I believe meaningful results could be obtained with even a relatively small sample size of ~50.
+  of listens. I believe meaningful results could be obtained with even a relatively small sample size of ~50. 
 </li>
   
 </p> 
 
-
 I usually narrow down the most promising idea to work on, which is why not all of these will become completed projects. 
-      
-<br>
-<br>
 
+<!-- 
+<br>
+<br>
 
 The CSS for this website was drawn from the website of someone whose work I greatly admire: <a href="https://aatishb.com/" target="_blank"><u>Aatish Bhatia</u></a>. 
+-->
       
     </aside>
   </footer>
