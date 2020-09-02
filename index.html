@@ -331,18 +331,24 @@ I'm currently working on exploring the intriguing features of the errors for thi
 
      
         <li>
-          <h2><a class="post-link" href="project_files/leveraged_index.pdf" target="_blank">An analysis of the returns from simulated leveraged index funds since 1985</a></h2> <aside class="post-meta"> · Aug 2017</aside>
+          
+          <h2><a class="post-link" href="https://github.com/jessebmurray/leverage/blob/master/README.md" target="_blank">An analysis of the returns from simulated leveraged index fundss</a></h2> <aside class="post-meta"> · Aug 2017</aside>
           <div class="third">
             <div>
 
-              <img src="/images/img3.png">
+              <img src="/images/leverage-10yr-relative-percentiles.png">
 
             </div>
             <div>
             <span class="blurb">
 
-                I simulate index funds with annual rebalancing of leveraging rates from 0% to 100% across 1,144 historical 10-year periods each spaced one week apart. The index funds used are: The NASDAQ Composite, the S&P 500, and the Dow Jones Industrial Average. Main results: All indices had higher median returns with increased leverage, but there were diminishing and even decreasing median returns as leverage increased past 50%. For example: at 50% leverage, the S&P 500 had a median 10-year compound interest rate of 12% as compared to 8.3% for unleveraged. Even in the worst 20-year period (out of 624), moderate amounts of leverage (up to 40%) had higher compound interest rates for all three indices.  
 
+Leveraged index funds have recently become a well known investment instrument, examples include UPRO or TQQQ, which return 3x the S&P 500 and NASDAQ 100, respectively, within a single day. That is, if the S&P 500 rises by 1% in a trading day, UPRO rises by 3%. In 2017, I became interested in how these tools could be used over the long-term, and so I created some <a href="https://drive.google.com/file/d/17ZEjg1gfVvGroazf7V_1WRU2w1egh_qS/view?usp=sharing" target="_blank">enormous excel sheets</a> and wrote up a little <a href="project_files/leveraged_index.pdf" target="_blank">report on my findings</a>. More recently, I wrote some highly efficient Python code to get the job done, except I used historical S&P 500 price data going back to 1928, and combined it separate data on annual dividend yields. I look at how investing x% of an equity portfolio in the leveraged index, and the remaining in the standard, non-leveraged index performas, with the tax-advantaged strategy of rebalancing the portfolio (returning to the x%) every year. I analyze the performance of this strategy with leverage rates from 0% to 100% across all possible 20,756 10-year periods since 1928. I also included a copy of notebook that looks at all 20-year periods. What I found was that leveraging is certainly a risk and should be therefore be partly a function of proximity-to-retirment. However, small amounts of leverage appear to be able to boost equity returns over the long-term. 
+              
+<!--
+I simulate the S&P 500 with annual rebalancing of leveraging rates from 0% to 100% across 1,144 historical 10-year periods each spaced one week apart. The index funds used are: The NASDAQ Composite, the S&P 500, and the Dow Jones Industrial Average. Main results: All indices had higher median returns with increased leverage, but there were diminishing and even decreasing median returns as leverage increased past 50%. For example: at 50% leverage, the S&P 500 had a median 10-year compound interest rate of 12% as compared to 8.3% for unleveraged. Even in the worst 20-year period (out of 624), moderate amounts of leverage (up to 40%) had higher compound interest rates for all three indices.  
+-->
+              
             </span>
             </div>
           </div>
