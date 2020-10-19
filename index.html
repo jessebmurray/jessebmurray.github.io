@@ -131,7 +131,7 @@ In this research, I build machine learning models that classify samples as indic
             <div>
             <span class="blurb">
 In this research, I obtained new results about how the first and last two-letter bigrams of a solution word are highly informative of the solution to an anagram, as compared to the interior bigrams. This result has deep connections to a strongly supported result from reading studies that <a href="https://www.researchgate.net/publication/232609640_The_importance_of_first_and_last_letter_in_words_during_sentence_reading">
-the first and last letters of words are more informative than the interior letters</a>. Our result from eye-tracking data provides an independent line of evidence in agreement with these results, and suggests an overall theory that internal word representations are weighted towards their beginnings and ends. In this year-long research project, I designed, ran, and analyzed the data from an eye-tracking experiment with 29 participants. I eventually formed and am continuing to lead a research team supervised by <a href="https://www.linkedin.com/in/minjoon-kouh-093751/">Minjoon Kouh</a>. I presented this research at the annual Brain and Behavior Conference at the University of Scranton in March 2020.
+the first and last letters of words are more informative than the interior letters</a>. Our result from eye-tracking data provides an independent line of evidence in agreement with these results, and suggests an overall theory that internal word representations are weighted towards their beginnings and ends. In this year-long research project, I designed, ran, and analyzed the data from an eye-tracking experiment of 29 participants. I eventually formed and am continuing to lead a research team supervised by <a href="https://www.linkedin.com/in/minjoon-kouh-093751/">Minjoon Kouh</a>. I presented this research at the annual Brain and Behavior Conference at the University of Scranton in March 2020.
 
 
 
@@ -162,36 +162,6 @@ the first and last letters of words are more informative than the interior lette
 What follows is a non-technical abstract (the technical abstract is in the paper). Are the tallest members of a population mostly the children of tall couples or of average/shorter couples? You might expect most of the tall children to be from tall couples, because tall couples are more likely to have tall children. On the other hand, you remember that there are many more non-tall couples than tall couples, so by their superior number, non-tall couples might produce more tall children overall. So which is it? Does the greater likelihood overcome the greater number, or vice versa? The goal of this project was to derive a compuational model that quantified these effects and answered such questions precisely. What did it find? Well, if 'tall' is to be considered as within the top 10%, then the shorter couples win by far: only 30% of the tall members of a population are from tall parents. This model ended up also having a lot to say about intergenerational mobility and the  parameter values that allow for a stable population over time. The model made verifiable predictions that agreed remarkably well with <a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/T0HSJ1">Galton’s historic height dataset</a> (R^2 of 0.81) and with <a href="https://www.equality-of-opportunity.org/assets/documents/mobility_geo.pdf">US family income data</a> (R^2 of 0.96).
 
 
-
-
-<!--
-
-Consider the tallest trees in a forest. Are most of them the offspring of the last generation's
-tallest or shorter/average trees?
-
-Although tall trees have a higher probability of having tall offspring,
-there are many more average/short trees than tall trees.
-
-To answer the question, I created a model of normal population distributions reproducing with regression towards the mean.
-
-The model was based on the                  <a href="https://en.wikipedia.org/wiki/Regression_toward_the_mean#Definition_for_simple_linear_regression_of_data_points">
-linear regression</a> equation of           <a href="https://www.nature.com/articles/pr1998502">
-polygenic inheritance</a>.
-
-It assumed small normal distributions about the
-expected-offspring-value from each parent member in the previous
-generation that sum to form the current generation distribution.
-
-A simulation of the model found that past the 72nd percentile, the tallest trees are
-mostly the offspring of shorter/average parents.
-
-The model was also applied to intergenerational movement between quintiles and obtained
-an r<sup>^2</sup> of 0.92 and 0.93 (p < .01) with  Brookings Institution measures of                  <a href="https://www.brookings.edu/blog/social-mobility-memos/2014/10/27/the-inheritance-of-education/">
-intergenerational education and income mobility</a>, respectively.
-
-The high correlations may have resulted from parent values in those distributions producing sub-offspring
-distributions that regress towards the mean.
--->
 
             </span>
             </div>
@@ -315,9 +285,6 @@ I'm currently working on exploring the intriguing features of the errors for thi
 
 Leveraged ETFs have recently become well known investment instruments. Examples include UPRO and TQQQ, which return 3x the daily return of the S&P 500 and Nasdaq 100, respectively. That is, if the S&P 500 falls by 1% in a single trading day, UPRO will fall by 3% - and vice versa if the S&P 500 rises in price. In 2017, I became interested in how leveraged index funds could be used over the long-term, and so I created some <a href="https://drive.google.com/file/d/17ZEjg1gfVvGroazf7V_1WRU2w1egh_qS/view?usp=sharing">enormous excel sheets</a> and wrote up a little <a href="project_files/leveraged_index.pdf">report on my findings</a>. More recently, I returned to the problem and wrote highly efficient and concise <a href="https://numpy.org/">NumPy</a> code to get the job done. I combined separate historical S&P 500 and annual dividend yield data going back to 1928. I looked at the performance of investing x% of an equity portfolio in a leveraged index, with the remaining in the standard, non-leveraged index, assuming reinvestment of dividends and the tax-advantaged strategy of rebalancing the portfolio (returning to the x%) every year. I analyze the performance of this strategy with leverage rates from 0% to 100% across all 20,756 possible ten-year periods since 1928. I also made a copy of the notebook that looks at all twenty-year periods. What I found was that leveraging is certainly a risk and should therefore be a function of proximity-to-retirement. However, small amounts of leverage appear to be able to boost equity returns over the long-term.
 
-<!--
-I simulate the S&P 500 with annual rebalancing of leveraging rates from 0% to 100% across 1,144 historical 10-year periods each spaced one week apart. The index funds used are: The NASDAQ Composite, the S&P 500, and the Dow Jones Industrial Average. Main results: All indices had higher median returns with increased leverage, but there were diminishing and even decreasing median returns as leverage increased past 50%. For example: at 50% leverage, the S&P 500 had a median 10-year compound interest rate of 12% as compared to 8.3% for unleveraged. Even in the worst 20-year period (out of 624), moderate amounts of leverage (up to 40%) had higher compound interest rates for all three indices.
--->
 
             </span>
             </div>
@@ -357,9 +324,7 @@ I lend support to the <a href="https://www.ncbi.nlm.nih.gov/books/NBK233807/">th
             <span class="blurb">
 I compare the relative competitiveness and economic rewards (income) of different college majors using SAT score and income data. Main results: The English, Language, and Philosophy/religious majors, i.e., humanities majors, are both very competitive as well as very economically unrewarding. On the other hand, the Physical science and Biology majors are highly competitive and relatively economically unrewarding, that is, until a graduate degree is obtained. Then, those majors become very economically rewarding. For overall score - in terms of getting the most economic reward for the least competitiveness - the 'best' undergraduate degrees are Engineering and Computer Science.
 
-<!--
-I compare the relative competitiveness and economic rewards of different college majors both for bachelor's degree only as well as graduate degree holders using SAT score and income data. Main results: The English, Language, and Philosophy/religious are both highly competitive and highly economically unrewarding. Physical science and Biology majors are highly competitive and relatively economically unrewarding, until a graduate degree is obtained. Then those majors become highly economically rewarding. For overall score - in terms of maximizing the economic rewards as well as the ratio of the rewards to the competitiveness - if one only obtains a bachelor's degree the 'best' majors are Engineering and Computer Science.
--->
+
             </span>
             </div>
           </div>
@@ -459,13 +424,7 @@ I have some project-ideas still on my might-do/unexplored list, they are on topi
     The fastest walking path through the Manhattan grid based on start and end locations, taking into account waiting times at crosswalks; i.e., it is not sides a and b of a right triangle.
 </li>
 
-<!--
-<li>
-    Listing the non-proper-noun words of the most common words in English and grouping together those that are synonyms
-  of one another to obtain the number of unique semantic representations as compared to the number of unique words. Playing around with
-  the resulting data on words per unique semantic representation.
-</li>
--->
+
 
 
 <li>
@@ -489,12 +448,6 @@ Credits for the CSS of this website go entirely to <a href="https://aatishb.com/
 
 
 
-<!--
-<br>
-<br>
-
-The CSS for this website was drawn from the website of someone whose work I greatly admire: <a href="https://aatishb.com/"><u>Aatish Bhatia</u></a>.
--->
 
     </aside>
   </footer>
