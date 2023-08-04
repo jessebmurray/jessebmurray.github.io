@@ -1,0 +1,28 @@
+
+
+
+<!-- Remove the generated at comment at the top and line at the bottom. -->
+<!-- Remove the 'cited by' parts of the citations. -->
+
+
+
+<!-- within the head, to create a max width for the text, prevent overflow, increase font size slightly -->
+<style>
+    .content {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 17px;
+    }
+    .ltx_equation.ltx_eqn_table {
+        display: block;
+        overflow-x: auto;
+    }
+    body {
+        font-size: 18px;
+    }
+</style>
+
+
+
+<!-- Changed size of the Figure, was way too large before -->
+<figure id="S0.F1" class="ltx_figure"><img src="images/surprise_painting.jpg" id="S0.F1.g1" class="ltx_graphics ltx_centering ltx_img_square" width="300" alt="Refer to caption"> <!-- height="1015"-->
